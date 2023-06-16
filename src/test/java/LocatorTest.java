@@ -23,6 +23,11 @@ public class LocatorTest extends BaseTest {
     driver.findElement(By.cssSelector("[class*='opping']")).click();
     driver.findElement(By.cssSelector("[data-test^='che']")).click();
     driver.findElement(By.cssSelector("[class$='cancel_link']")).click();
+    driver.findElement(By.cssSelector("[class~='btn_action']")).click();
+    driver.findElement(By.xpath("//div[@id = 'root']//following::input[1]")).sendKeys("Evgeniy");
+    driver.findElement(By.xpath(" //input[@class='input_error form_input' and @name='lastName']")).sendKeys("Matyas");
+    driver.findElement(By.xpath("//input[@id='postal-code']")).sendKeys("12345");
+    driver.findElement(By.xpath(" //input[@type='submit' and @class='submit-button btn btn_primary cart_button btn_action']")).click();
 
 
 
