@@ -25,6 +25,7 @@ public class InventoryTest extends BaseTest{
 
 
     }
+    @Test
     public void validationItemNameButton(){
         loginPage.open();
         loginPage.login("standard_user","secret_sauce");
