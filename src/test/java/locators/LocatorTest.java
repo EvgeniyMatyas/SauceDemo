@@ -1,3 +1,5 @@
+package locators;
+
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
@@ -8,7 +10,6 @@ public class LocatorTest extends BaseTest {
     driver.findElement(By.id("user-name")).sendKeys("standard_user");
     driver.findElement(By.name("password")).sendKeys("secret_sauce");
     driver.findElement(By.className("submit-button")).click();
-  //  driver.findElement(By.linkText("Twitter")).click();
     driver.findElement(By.xpath("//button[@data-test='add-to-cart-sauce-labs-bike-light']")).click();
     driver.findElement(By.xpath("//div[text()='Sauce Labs Fleece Jacket']")).click();
     driver.findElement(By.xpath("//button[contains(@class,'btn btn_primary btn_small btn_inventory')]")).click();
