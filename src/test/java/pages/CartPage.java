@@ -12,5 +12,6 @@ public class CartPage extends BasePage{
     public boolean titleIsVisible() {
         return driver.findElement(CART_TITLE).isDisplayed();
     }
+    //todo
 
 }
